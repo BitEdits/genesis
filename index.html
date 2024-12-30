@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNES</title>
+    <link rel="stylesheet" href="https://retro.5ht.co/style.css" />
+    <style>header { background: linear-gradient(135deg, #050505, #1063F7); }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="assets/SEGA.svg" height=30>
+                </div>
+                <div class="nav-links">
+                    <a href="#rev">Ревізії</a>
+                    <a href="#spec">Специфікація</a>
+                    <a href="#doc">Документація</a>
+                    <a href="#code">Код</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Mega Drive</h1>
+                    <h2></h2>
+                    <p>188 x 161.5 mm</p>
+                    <button onclick="location.href='https://github.com/BitEdits/genesis'" type="button">Github</button>
+                </div>
+                <div class="hero-image">
+                    <img width=300 src="assets/VA18PAL.jpg" style="background-color:#EEEEEE;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section id="intro" class="container">
+            <h2><a name="intro">32-бітний комп'ютер на M68K від SEGA.</a></h2>
+    </section>
+    <section id="rev" class="container">
+            <h2><a name="spec">Ревізії PCB</a></h2>
+            <table class="specs">
+                <tr>
+                    <th width=20%>VA0</th>
+                    <td>Model 1, Japan.</td>
+                </tr>
+                <tr>
+                    <th>VA1</th>
+                    <td>Model 1, Japan.</td>
+                </tr>
+                <tr>
+                    <th>VA2</th>
+                    <td>Model 1, USA, High Definition Graphics.</td>
+                </tr>
+                <tr>
+                    <th>VA3</th>
+                    <td>Model 1, USA, High Definition Graphics.</td>
+                </tr>
+                <tr>
+                    <th>VA4</th>
+                    <td>Model 1, USA.</td>
+                </tr>
+                <tr>
+                    <th>VA5</th>
+                    <td>Model 1, Japan.</td>
+                </tr>
+                <tr>
+                    <th>VA6</th>
+                    <td>Model 1, Japan.</td>
+                </tr>
+                <tr>
+                    <th>VA6</th>
+                    <td>Model 1, USA, High Definition Graphics.</td>
+                </tr>
+                <tr>
+                    <th>VA6.5</th>
+                    <td>Model 1, PAL.</td>
+                </tr>
+                <tr>
+                    <th>VA8</th>
+                    <td>Model 1.</td>
+                </tr>
+                <tr>
+                    <th>VA7</th>
+                    <td>Model 1, USA.</td>
+                </tr>
+                <tr>
+                    <th>VA0</th>
+                    <td>Model 2, USA, Japan, PAL.</td>
+                </tr>
+                <tr>
+                    <th>VA1</th>
+                    <td>Model 2, USA, PAL.</td>
+                </tr>
+                <tr>
+                    <th>VA1.8</th>
+                    <td>Model 2, USA SKS, USA CMK, PAL, Asia.</td>
+                </tr>
+                <tr>
+                    <th>VA2</th>
+                    <td>Model 2, USA.</td>
+                </tr>
+                <tr>
+                    <th>VA3</th>
+                    <td>Model 2.</td>
+                </tr>
+                <tr>
+                    <th>VA4</th>
+                    <td>Model 2.</td>
+                </tr>
+                <tr>
+                    <th>VA1</th>
+                    <td>Model 3, USA.</td>
+                </tr>
+                <tr>
+                    <th>VA2</th>
+                    <td>Model 3, USA.</td>
+                </tr>
+            </table>
+    </section>
+    <section id="spec" class="container">
+            <h2><a name="spec">Специфікація</a></h2>
+            <table class="specs">
+                <tr>
+                    <th>Процесор:</th>
+                    <td>S-CPU (WDC 65C816, Ricoh 5A22) 24-бітна шина.</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять:</th>
+                    <td>128KB RAM, 64KB VRAM.</td>
+                </tr>
+                <tr>
+                    <th>Осцилятор:</th>
+                    <td>RP5C01 RTC.</td>
+                </tr>
+                <tr>
+                    <th>Графіка:</th>
+                    <td>S-PPU (DMA, HDMA, 512B  CGRAM, 544B OAM) 8-бітна шина..</td>
+                </tr>
+                <tr>
+                    <th>Звук:</th>
+                    <td>S-DSP ADPCM 32КГц, S-SMP (SPC700), 64 KB of PSRAM.</td>
+                </tr>
+                <tr>
+                    <th>Картріджі:</th>
+                    <td>1) подвійний ROM зі SRAM;
+                        2) одинарний ROM зі SRAM;
+                        3) одинарний ROM.</td>
+                </tr>
+            </table>
+        </section>
+    <section id="doc" class="container">
+            <h2><a name="doc">Документація</a></h2>
+            <p>[1]. <a href="https://classic.copetti.org/writings/consoles/super-nintendo/">R. Copetti. Super Nintendo Architecture — A Practical Analysis. https://copetti.org, 2019.</a><br>
+               [2]. <a href="programming.txt">Технічна хакерська документація по SNES від nocash</a><br>
+               [3]. <a href="schematics.pdf">Принципова схема SNES</a><br>
+               [4]. <a href="https://archive.org/details/SNESDevManual/book1/">SNES Development Manual. Book 1.</a><br>
+               [5]. <a href="https://archive.org/details/SNESDevManual/book2/">SNES Development Manual. Book 2.</a><br>
+               [6]. <a href="bom.txt">BOM для всіх версії PCB</a><br>
+               [7]. <a href="opcodes.txt">Шпаргалка інструкцій з ISA</a><br>
+            </p>
+    </section>
+    <section id="code" class="container">
+            <h2><a name="code">Код</a></h2>
+    </section>
+</main>
+<footer>
+    <p> 2024—2025 &copy; Максим Сохацький. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
