@@ -1,0 +1,207 @@
+========================================================================
+=========ALADDIN SECRETS AND HIDDEN FEATURES FAQ FOR SEGA GENESIS=======
+========================================================================
+
+Version 1.0.2, January 3, 1995
+
+Entire contents copyright (c) 1995 by Will Irace, wirace@csun.edu,
+http://www.csun.edu/~hbcsc003/will.html .  Permission is hereby
+granted to freely distribute this document provided that it is not
+modified in any way.
+
+Suggestions for correcting errors, clarifying passages, or adding
+information are absolutely welcome.  Please send all comments to
+wirace@csun.edu.
+
+This FAQ is also available by FTP, courtesy of GamePro magazine's Andy
+Eddy. Just FTP to ftp.netcom.com and cd /pub/vi/vidgames/faqs.
+
+=============================SPOILER WARNING============================
+
+This document contains all the juicy stuff I've learned during months of
+playing Disney's Aladdin and reading rec.games.video.sega.  Read it at
+your own risk.
+
+=============================ACKNOWLEDGEMENTS===========================
+
+I didn't find all this stuff by myself; my thanks go to the readership
+of rec.games.video.sega, and to my lovely girlfriend Heather, who's
+found at least as many of the goodies presented below as I have.
+
+===========================LEVEL SELECT CODES===========================
+
+o  During any level, pause (hit start) and type "ABBAABBA" to warp to
+   the next level.
+
+o  In the options screen, type "ACACACACBBBB" to get to the cheat
+   screen.  Options here are:
+
+   -- Cheat  mode: total, complete immortality.
+
+   -- Start on level: Choose a level to play.  When you complete the
+      chosen level you end up back to level two, and the game
+      continues as if you've only just played level one.
+
+   -- Freezeability: Turns the start button into a momentary pause,
+      i.e., press to pause, release to resume.
+
+============================TIPS & HIDDEN STUFF=========================
+
+AGRABAH MARKET
+
+o  Just before you fall onto the camel, wait and stand right on the
+   edge.  If you do it properly, a free life will appear right in front
+   of you.
+
+o  On either side of the merchant, there are flagpoles you can use to
+   superjump (see "MISCELLANEOUS NOTES" below) out of sight on the roof
+   above him.  There are a couple of gems and a free life up there.
+
+THE DESERT
+
+o  Walk to the first tree, then double back all the way to the left.
+   Here you'll find a free life waiting for you.
+
+o  Just after the second camel is a clothesline.  On the clothesline is
+   a pair of Mickey's ears.  Position Aladdin so that after he stops and
+   leans forward, it looks as if he's wearing the mouse ears.  Do it
+   right and you'll be rewarded with a free life. NOTE: this won't work
+   if you took the free life near the camel on the previous level.
+
+o  After the ears, when you jump across the first gap between the rocks,
+   fall a little short and you'll find a little hidden passageway with
+   four gems.
+
+o  After the first set of palm trees, you've got to go through a hidden
+   passage and kill the guy at the other end.  Notice there's a step
+   down.  Go down there and then back to the left.  There's a little
+   mini-passageway with an apple and a gem in there.
+
+o  At the bottom of where you jump up to get the scarab for the first
+   time, there's a hidden passage containing a heart and a gem.
+
+o  Shortly after that, you'll come across a pillar with a picture of
+   Goofy on it.  Step behind it, and press and hold jump.  Behold, the
+   merchant!
+
+o  The second time you see the scarab, you can continue to the left.  No
+   rewards, just a little waste of time.
+
+AGRABAH ROOFTOPS
+
+o  Do a superjump straight up off the first flagpole for a free life.
+
+o  Throw an apple at the pot with smoke soming out of it to expose a gap
+   in the floor.  Fall down through that gap to get to the merchant.
+
+o  Just before you jump onto the rope that lets you slide down and to
+   the left, double back to the right a screen or two.  A heart!
+
+o  After you've vaulted up the two consecutive flagpoles, you'll see a
+   free life off to the right.  Fall down and do a superjump off the
+   upper flagpole to obtain it.
+
+o  Above the first clothesline is an Abu token.  Do a superjump off the
+   flagpole to grab it.
+
+o  On the floor just below the next milestone you can get a free life.
+   Just move down and kill the guard below, then use the flagpole to
+   double back.  Watch out, there's a guard there who wasn't there
+   before...
+
+SULTAN'S DUNGEON
+
+I hate this level.
+
+o  Not far after the first milestone you have to go through an upper
+   floor with two ball-and-chains, then a similar one directly below it.
+   Go past the first one to the lower one, then double back up and
+   collect the free life.
+
+CAVE OF WONDERS
+
+o  Near the end of the level, instead of climbing up the left side of
+   the mountain, you can go inside and collect some treasures like gems,
+   hearts, and a free life, then emerge on the right to collect the
+   lamp.
+
+THE ESCAPE
+
+What can I say? This level is really hard.  The only advice I can offer is
+that if you seem to be consistently dying right after you jump off a
+sinking rock, make sure you wait until the last possible moment to take a
+running jump off the rock.
+
+RUG RIDE
+
+For anyone who cares, here's the path to take to survive the rug ride.
+(D=down, U=up, E=either way):
+
+UDDDUDEUEDUEDEUUDUEDDEDEUDUD
+
+INSIDE THE LAMP
+
+o  If you're a hidden-treasure fanatic, make sure you take the extra ten
+   minutes to look behind every wisp of smoke in the lamp.  Lots of game
+   tokens and gems and apples lying about.  This is IMO a complete waste
+   of time, but hey, it's your quarter... :-)
+
+o  To get to the merchant (see him over there?), use genie's finger to
+   vault yourself over the top of the screen and to the left.  No
+   superjump needed, but takes some practice.
+
+o  From the merchant's pillow, jump to the left onto the finger, then to
+   the left again onto a pillow that has--you guessed it--a free life
+   waiting for you.
+
+o  A couple of milestones later, you'll see a free life that seems
+   impossible to get.  The thing to do is to go a little farther and do
+   a superjump off genie's finger and soar way back to the left,
+   collecting the free guy.
+
+o  At the end of the level are TWO free lives, one above and one below
+   Genie's tongue.  Fall below the tongue; the smoke catches you.  Grab
+   free life #1. Go back up onto the tongue, fall off and do a superjump
+   straight up to get the second one.
+
+SULTAN'S PALACE
+
+I haven't found anything special here.  Has anyone else?
+
+JAFAR'S PALACE
+
+There's a heart that's kind of hard to find, but I'm not telling where,
+because it's only a heart and it isn't really that difficult to locate.
+
+Nyah.
+
+===========================MISCELLANEOUS NOTES==========================
+
+o  A superjump, oft referred to in the pages above, is a really high
+   jump off of a bouncy object like a camel, flagpole, genie's finger,
+   etc.  To do this, *FALL* off of something onto the bouncy thing and
+   press and hold the jump button on the way down.
+
+o  You can walk through coals and fire undamaged as long as you don't
+   change direction in the middle.  Important on the last level.
+
+o  Slash your sword at the hands throwing baskets to kill them.
+
+o  You get absolutely NO points for killing anybody.
+
+==============================UNKNOWN STUFF=============================
+
+o  When you push Aladdin against a wall, he appears as though he's
+   trying to push against it.  Has anyone discovered if this has any
+   practical use?
+
+o  Is there any rhyme or reason to the order of prizes presented in the
+   slot machine?  Has anyone figured out a RELIABLE method for
+   consistently winning?
+
+============================THE END OF THE FAQ==========================
+
+Hope it was useful.  Email me at wirace@csun.edu if you have any
+comments or additions.
+
+--Will
