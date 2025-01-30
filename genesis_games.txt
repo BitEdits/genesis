@@ -2,7 +2,7 @@ Aladdin (Disney)
 Alien 3
 Alien Soldier
 Animaniacs
-Ariel Mermaid (Disney)
+<tr> <th>004</th> <td><b> Ariel Mermaid (Disney)
 Asterix and the Great Rescue
 Asterix and the Power of Gods
 Bob

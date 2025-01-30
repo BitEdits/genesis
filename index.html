@@ -38,8 +38,11 @@
 
     <main>
     <section id="intro" class="container">
-            <h2><a name="intro">32-бітний комп'ютер на M68K від Kabushiki Gaisha Sega (かぶしきがいしゃせが),
-                                компанією, яка створила найбільшу кількість аркадних автоматів.</a></h2>
+            <h2><a name="intro">32-бітний комп'ютер на M68K</a></h2>
+            <p>32-бітний комп'ютер на Motorola 68000 від Kabushiki Gaisha Sega (かぶしきがいしゃせが),
+               компанією, яка створила найбільшу кількість аркадних автоматів, під назвою Genesis або Mega Drive
+               стимулював Nintendo до конкуренції і випуску SNES через 2 роки, а також сформував основу для залучення
+               старшої цільової аудиторії.</p>
     </section>
     <section id="rev" class="container">
             <h2><a name="spec">Ревізії PCB</a></h2>
@@ -126,37 +129,277 @@
             <h2><a name="spec">Специфікація</a></h2>
             <table class="specs">
                 <tr>
-                    <th width=30>Процесор:</th>
-                    <td>.</td>
+                    <th width=30>Процесор головний:</th>
+                    <td>Motorola 68000 IC54. 7.61 MHz in PAL consoles, 7.67 MHz in NTSC consoles. 24‑bit address bus.
+			68000 internal bus: 30.681812 MB/s (NTSC, 32-bit, 7.670454 MHz), 30.401956 MB/s (PAL, 32-bit, 7.600489 MHz).</td>
                 </tr>
                 <tr>
-                    <th>Пам'ять:</th>
-                    <td>.</td>
+                    <th>Процесор додатковий:</th>
+                    <td>Z80 IC56. Runs at 3.55 MHz in PAL consoles, 3.58 MHz in NTSC consoles. Для емуляції Sega Master System.
+			Z80 internal bus: 3.579545 MB/s (NTSC), 3.546894 MB/s (PAL).</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять ROM:</th>
+                    <td>2KB. Trademark Security System (TMSS). </td>
+                </tr>
+                <tr>
+                    <th>Пам'ять SRAM:</th>
+                    <td>TC51832PL-12 64KB, IC55, IC43. CPU access: 3.800245–5 MHz (200–263 ns).
+			6‑bit (2x 8‑bit), PSRAM, 5.263157 MHz (190 ns).
+			</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять VDP DRAM:</th>
+                    <td>MB81461, IC59, IC60. 64 KB. SAM buffer cache: 256 bytes
+			VDP internal RAM cache: 26.846588 MB/s (NTSC, 16-bit, 13.423294 MHz), 26.601712 MB/s (PAL, 16-bit, 13.300856 MHz),
+			Performance: 13.423294 MHz (NTSC, 74 ns), 13.300856 MHz (PAL, 75 ns).
+			FPM DRAM: 2048-bit internal (8x 256-bit arrays), 8-bit external (2x 4‑bit), 8.333333 MHz (120 ns), 8 MHz (125 ns, when reading SAM).
+			SAM buffer cache: 8-bit (2x 4‑bit), 13.423294 MHz (NTSC, 74 ns), 13.300856 MHz (PAL, 75 ns), VDP reads continuous stream of video screen refresh data from SAM while reading/writing DRAM.
+			VRAM: 8/16-bit Dual‑Port VRAM, 16-bit RAM/SAM, 8-bit RAM.
+			VDP internal cache: 232 bytes (
+				CRAM (Color RAM) 72 bytes;
+				VSRAM (Vertical Scrolling RAM) 80 bytes;
+				Sprite cache 80 bytes).</td>
+                </tr>
+                <tr>
+                    <th>Пам'ять Audio:</th>
+                    <td>8 KB.
+			Performance: 8‑bit, SRAM/XRAM, 3.030303 MHz (330 ns).</td>
+                </tr>
+                <tr>
+                    <th>Арбітр шини:</th>
+                    <td>Bus Arbiter 315-5308, IC65.
+			16‑bit system bus — 68000 &amp; VDP &lt;‑&gt; Main RAM & Cartridge ROM/RAM.
+			8‑bit system bus — Z80 &amp; YM2612 &lt;‑&gt; Audio RAM.
+			8/16‑bit video bus — VDP &lt;‑&gt; VRAM.</td>
                 </tr>
                 <tr>
                     <th>Осцилятор:</th>
-                    <td>.</td>
+                    <td>Clock Generator 315-5345, IC61.</td>
+                </tr>
+                <tr>
+                    <th>I/O контролер:</th>
+                    <td>IO Controller 315-5309, IC66.</td>
                 </tr>
                 <tr>
                     <th>Графіка:</th>
-                    <td>.</td>
+                    <td>Sega 315‑5313 VDP (Yamaha YM7101) IC64.
+			Progressive: NTSC: 320×224(40), 256×224(32); PAL: 320×224, 256×224, 320×240, 256×240.
+			Interlaced: NTSC: 320×448, 256×448; PAL: 320×448, 256×448, 320×480, 256×480.
+			Overscan: NTSC: 320×448, 256×448; PAL: 320×448, 256×448, 320×480, 256×480.
+			Clock rate: 13.423294 MHz (NTSC), 13.300856 MHz (PAL).
+			Pixel clock rate: 6.711647 MHz (NTSC), 6.650428 MHz (PAL).
+			Refresh rate: 59.92274 Hz (NTSC), 49.701459 Hz (PAL).
+                        </td>
+                </tr>
+                <tr>
+                    <th>Відео кодер:</th>
+                    <td>Video Encoder Sony CXA1145.</td>
+                </tr>
+                <tr>
+                    <th>Спрайти:</th>
+                    <td>80 on-screen 320x240 or 320x480 pixel mode or 64 256x240 pixel mode. </td>
+                </tr>
+                <tr>
+                    <th>Скрол:</th>
+                    <td>Width and height independently set to 32, 64, or 128 cells as VRAM allows. </td>
+                </tr>
+                <tr>
+                    <th>Площини:</th>
+                    <td>4 (2 scrolling playfields, 1 sprite plane, 1 'window' plane), per-tile priority. </td>
+                </tr>
+                <tr>
+                    <th>Палітра:</th>
+                    <td>512 colors (1536 using shadow/highlight mode). 64 × 9-bit words of color RAM, 4 lines of 15 colors plus transparent, allowing 61 on-screen colors (up to 183 via raster effects and shadow/highlight).</td>
                 </tr>
                 <tr>
                     <th>Звук:</th>
-                    <td>.</td>
+                    <td>A Yamaha YM2612 and a Texas Instruments SN76489. Audio Amplifier (CXA1034P).</td>
                 </tr>
                 <tr>
                     <th>Картріджі:</th>
-                    <td>.</td>
+                    <td>Cartridge memory: 512–8224 KB.
+			ROM: 512 KB (4 Mbits) to 8 MB (64 Mbits).
+			SRAM: 8 KB to 32 KB.
+			Most cartridges: MROM, 5 MHz (200 ns).
+			Some cartridges: MROM/EPROM, 7.670454 MHz (NTSC), 7.600489 MHz (PAL), 130–131 ns.
+			Cartridge ROM bandwidth: 10 MB/s (most cartridges), 15.200978–15.340906 MB/s (some cartridges).</td>
                 </tr>
             </table>
         </section>
     <section id="doc" class="container">
             <h2><a name="doc">Документація</a></h2>
+            <p>[1]. <a href="https://segaretro.org/Sega_Mega_Drive/Technical_specifications">Технічна специфікація Sega Mega Drive</a><br>
+	    </p>
     </section>
     <section id="code" class="container">
             <h2><a name="code">Код</a></h2>
     </section>
+    <section id="games" class="container">
+            <h2><a name="games">Ігри</a></h2>
+            <P>Перелік ігор відібраних Максимом Сохацьким для Sega Mega Drive.</p>
+            <table class="specs"><tr><th
+     width=5>001</th> <td><b>Aladdin (Disney)</b> </td> </tr>
+    <tr> <th>002</th> <td><b>Alien 3</b></td> </tr>
+    <tr> <th>003</th> <td><b>Alien Soldier</b></td> </tr>
+    <tr> <th>004</th> <td><b>Animaniacs</b></td> </tr>
+    <tr> <th>005</th> <td><b>Ariel Mermaid (Disney)</b></td> </tr>
+    <tr> <th>006</th> <td><b>Asterix and the Great Rescue</b></td> </tr>
+    <tr> <th>007</th> <td><b>Asterix and the Power of Gods</b></td> </tr>
+    <tr> <th>008</th> <td><b>Bob</b></td> </tr>
+    <tr> <th>009</th> <td><b>Ballz 3D</b></td> </tr>
+    <tr> <th>010</th> <td><b>Barbie Super Model</b></td> </tr>
+    <tr> <th>011</th> <td><b>Battle Squadron</b></td> </tr>
+    <tr> <th>012</th> <td><b>Battle Tech - A Game of Armored Combat</b></td> </tr>
+    <tr> <th>013</th> <td><b>Beauty and the Beast (Disney)</b></td> </tr>
+    <tr> <th>014</th> <td><b>Bishoujo Senshi Sailor Moon</b></td> </tr>
+    <tr> <th>015</th> <td><b>Blades of Vengeance</b></td> </tr>
+    <tr> <th>016</th> <td><b>Blaster Master</b></td> </tr>
+    <tr> <th>017</th> <td><b>Blockout</b></td> </tr>
+    <tr> <th>018</th> <td><b>Blue Almanach</b></td> </tr>
+    <tr> <th>019</th> <td><b>Bonkers (Disney)</b></td> </tr>
+    <tr> <th>020</th> <td><b>Boogerman: A Pick and Flick Adventure</b></td> </tr>
+    <tr> <th>021</th> <td><b>Bubba 'n' Stix</b></td> </tr>
+    <tr> <th>022</th> <td><b>Bubble and Squak</b></td> </tr>
+    <tr> <th>023</th> <td><b>Bubsy in: Claws Encounters of the Furred Kind</b></td> </tr>
+    <tr> <th>024</th> <td><b>Bubsy II</b></td> </tr>
+    <tr> <th>025</th> <td><b>Bags Bunny in Double Trouble</b></td> </tr>
+    <tr> <th>026</th> <td><b>Castle of Illusion Starring Mickey Mouse (Disney)</b></td> </tr>
+    <tr> <th>027</th> <td><b>Cool Spot</b></td> </tr>
+    <tr> <th>028</th> <td><b>Chuck Rock</b></td> </tr>
+    <tr> <th>029</th> <td><b>Daffy Duck in Hollywood</b></td> </tr>
+    <tr> <th>030</th> <td><b>Dangerous Seed</b></td> </tr>
+    <tr> <th>031</th> <td><b>Darwin 4081</b></td> </tr>
+    <tr> <th>032</th> <td><b>DecapAttack</b></td> </tr>
+    <tr> <th>033</th> <td><b>Demolition Man</b></td> </tr>
+    <tr> <th>034</th> <td><b>Desert Demolition</b></td> </tr>
+    <tr> <th>035</th> <td><b>Desert Strike: Return to the Gulf</b></td> </tr>
+    <tr> <th>036</th> <td><b>Dino Dini's Soccer</b></td> </tr>
+    <tr> <th>037</th> <td><b>Donald in Malibu Mallard (Disney)</b></td> </tr>
+    <tr> <th>038</th> <td><b>Doraemon: Yume Dorobou to 7-Jin no Gozans</b></td> </tr>
+    <tr> <th>039</th> <td><b>Hyper Dunk</b></td> </tr>
+    <tr> <th>040</th> <td><b>Dragon Slayer: Eiyuu Densetsu</b></td> </tr>
+    <tr> <th>041</th> <td><b>Dragon Slayer: Eiyuu Densetsu II</b></td> </tr>
+    <tr> <th>042</th> <td><b>Dune: The Battle for Arrakis</b></td> </tr>
+    <tr> <th>043</th> <td><b>Dungeons & Dragons: Warriors of the Eternal</b></td> </tr>
+    <tr> <th>044</th> <td><b>Dyna Brothers 2</b></td> </tr>
+    <tr> <th>045</th> <td><b>Earthworm Jim</b></td> </tr>
+    <tr> <th>046</th> <td><b>Earthworm Jim 2</b></td> </tr>
+    <tr> <th>047</th> <td><b>Ecco the Dolphin</b></td> </tr>
+    <tr> <th>048</th> <td><b>Ecco the Dolphin 2</b></td> </tr>
+    <tr> <th>049</th> <td><b>Eliminate Down</b></td> </tr>
+    <tr> <th>050</th> <td><b>ExoSquad</b></td> </tr>
+    <tr> <th>051</th> <td><b>F-15 Strike Eagle II</b></td> </tr>
+    <tr> <th>052</th> <td><b>F-22 Interceptor</b></td> </tr>
+    <tr> <th>053</th> <td><b>F-117 Night Storm</b></td> </tr>
+    <tr> <th>054</th> <td><b>Fantasia (Disney)</b></td> </tr>
+    <tr> <th>055</th> <td><b>Fantastic Dizzy</b></td> </tr>
+    <tr> <th>056</th> <td><b>Flashback</b></td> </tr>
+    <tr> <th>057</th> <td><b>The Flintstones</b></td> </tr>
+    <tr> <th>058</th> <td><b>Gaiares</b></td> </tr>
+    <tr> <th>059</th> <td><b>General Chaos</b></td> </tr>
+    <tr> <th>060</th> <td><b>Golden Axe</b></td> </tr>
+    <tr> <th>061</th> <td><b>Golden Axe II</b></td> </tr>
+    <tr> <th>062</th> <td><b>Golden Axe III</b></td> </tr>
+    <tr> <th>063</th> <td><b>Goofy's Hysterical History Tour (Disney)</b></td> </tr>
+    <tr> <th>064</th> <td><b>The Great Circus Mystery Starring Mickey & Minnie (Disney)</b></td> </tr>
+    <tr> <th>065</th> <td><b>Grind Stormer</b></td> </tr>
+    <tr> <th>066</th> <td><b>Havoc</b></td> </tr>
+    <tr> <th>067</th> <td><b>International Rugby</b></td> </tr>
+    <tr> <th>068</th> <td><b>International Sensible Soccer - Limited Edition: World Champions</b></td> </tr>
+    <tr> <th>069</th> <td><b>Izzy's Quest for the Olympic Rings</b></td> </tr>
+    <tr> <th>070</th> <td><b>James Pond</b></td> </tr>
+    <tr> <th>071</th> <td><b>James Pond II</b></td> </tr>
+    <tr> <th>072</th> <td><b>James Pond III</b></td> </tr>
+    <tr> <th>073</th> <td><b>Jimmy White's Whirlwind Snooker</b></td> </tr>
+    <tr> <th>074</th> <td><b>The Jungle Book (Disney)</b></td> </tr>
+    <tr> <th>075</th> <td><b>Jungle Strike</b></td> </tr>
+    <tr> <th>076</th> <td><b>Jurassic Park</b></td> </tr>
+    <tr> <th>077</th> <td><b>Jurassic Park: Rampage Edition</b></td> </tr>
+    <tr> <th>078</th> <td><b>Justice League Task Force</b></td> </tr>
+    <tr> <th>079</th> <td><b>Kishi Densetsu</b></td> </tr>
+    <tr> <th>080</th> <td><b>Klax</b></td> </tr>
+    <tr> <th>081</th> <td><b>Krusty's Super Fun House</b></td> </tr>
+    <tr> <th>082</th> <td><b>Lemmings</b></td> </tr>
+    <tr> <th>083</th> <td><b>Lemmings 2</b></td> </tr>
+    <tr> <th>084</th> <td><b>LHX Attack Helicopter</b></td> </tr>
+    <tr> <th>085</th> <td><b>Thunder Force IV</b></td> </tr>
+    <tr> <th>086</th> <td><b>The Lion King (Disney)</b></td> </tr>
+    <tr> <th>087</th> <td><b>Magical * Taruruuto-kun</b></td> </tr>
+    <tr> <th>088</th> <td><b>Marble Madness</b></td> </tr>
+    <tr> <th>089</th> <td><b>Marko</b></td> </tr>
+    <tr> <th>090</th> <td><b>Marsupilami</b></td> </tr>
+    <tr> <th>091</th> <td><b>Marvel Land</b></td> </tr>
+    <tr> <th>092</th> <td><b>Master of Weapon</b></td> </tr>
+    <tr> <th>093</th> <td><b>Mega Bomberman</b></td> </tr>
+    <tr> <th>094</th> <td><b>Mega Man: The Wily Wars</b></td> </tr>
+    <tr> <th>095</th> <td><b>Mega SWIV</b></td> </tr>
+    <tr> <th>096</th> <td><b>Mega Turrican</b></td> </tr>
+    <tr> <th>097</th> <td><b>Mickey Mania (Disney)</b></td> </tr>
+    <tr> <th>098</th> <td><b>Mickey's Ultimate Challenge</b></td> </tr>
+    <tr> <th>099</th> <td><b>Micro Machines Military</b></td> </tr>
+    <tr> <th>100</th> <td><b>Micro Machines: Turbo Tournament 96</b></td> </tr>
+    <tr> <th>101</th> <td><b>Mortal Kombat</b></td> </tr>
+    <tr> <th>102</th> <td><b>Mortal Kombat II</b></td> </tr>
+    <tr> <th>103</th> <td><b>Mortal Kombat 3</b></td> </tr>
+    <tr> <th>104</th> <td><b>Mr. Nutz</b></td> </tr>
+    <tr> <th>105</th> <td><b>Ms. Pac-Man</b></td> </tr>
+    <tr> <th>106</th> <td><b>Another World / Out of This World</b></td> </tr>
+    <tr> <th>107</th> <td><b>Pocahontas (Disney)</b></td> </tr>
+    <tr> <th>108</th> <td><b>Powerball</b></td> </tr>
+    <tr> <th>109</th> <td><b>Prince of Persia</b></td> </tr>
+    <tr> <th>110</th> <td><b>Pulseman</b></td> </tr>
+    <tr> <th>111</th> <td><b>QuackShot starring Donald Duck</b></td> </tr>
+    <tr> <th>112</th> <td><b>Ristar</b></td> </tr>
+    <tr> <th>113</th> <td><b>Sagaia</b></td> </tr>
+    <tr> <th>114</th> <td><b>SeaQuest DSV</b></td> </tr>
+    <tr> <th>115</th> <td><b>Sensible Soccer: European Champions</b></td> </tr>
+    <tr> <th>116</th> <td><b>Sonic & Knuckles</b></td> </tr>
+    <tr> <th>117</th> <td><b>Sonic 3D Blast</b></td> </tr>
+    <tr> <th>118</th> <td><b>Sonic the Hedgehog</b></td> </tr>
+    <tr> <th>119</th> <td><b>Sonic the Hedgehog 2</b></td> </tr>
+    <tr> <th>120</th> <td><b>Sonic the Hedgehog 3</b></td> </tr>
+    <tr> <th>121</th> <td><b>Sonic the Hedgehog Spinball</b></td> </tr>
+    <tr> <th>122</th> <td><b>Spider-Man</b></td> </tr>
+    <tr> <th>123</th> <td><b>Spider-Man (Animated Series)</b></td> </tr>
+    <tr> <th>124</th> <td><b>Spider-Man & Venom: Maximum Carnage</b></td> </tr>
+    <tr> <th>125</th> <td><b>Spider-Man / X-Men: Arcade's Revenge</b></td> </tr>
+    <tr> <th>126</th> <td><b>Thunder Force II</b></td> </tr>
+    <tr> <th>127</th> <td><b>Thunder Force III</b></td> </tr>
+    <tr> <th>128</th> <td><b>Tinhead</b></td> </tr>
+    <tr> <th>129</th> <td><b>Toy Story</b></td> </tr>
+    <tr> <th>130</th> <td><b>Ultimate Mortal Kombat 3</b></td> </tr>
+    <tr> <th>131</th> <td><b>Vectorman</b></td> </tr>
+    <tr> <th>132</th> <td><b>Vectorman 2</b></td> </tr>
+    <tr> <th>133</th> <td><b>Venom - Spider-Man: Separation Anxiety</b></td> </tr>
+    <tr> <th>134</th> <td><b>Verytex</b></td> </tr>
+    <tr> <th>135</th> <td><b>Viewpoint</b></td> </tr>
+    <tr> <th>136</th> <td><b>Virtua Fighter 2</b></td> </tr>
+    <tr> <th>137</th> <td><b>Virtua Racing</b></td> </tr>
+    <tr> <th>138</th> <td><b>Vixen 357</b></td> </tr>
+    <tr> <th>139</th> <td><b>Wani Wani World</b></td> </tr>
+    <tr> <th>140</th> <td><b>Warrior of Rome</b></td> </tr>
+    <tr> <th>141</th> <td><b>Warrior of Rome 2</b></td> </tr>
+    <tr> <th>142</th> <td><b>Warsong</b></td> </tr>
+    <tr> <th>143</th> <td><b>Winter Challenge</b></td> </tr>
+    <tr> <th>144</th> <td><b>Wonder Boy III: Monster Lair</b></td> </tr>
+    <tr> <th>145</th> <td><b>Wonder Boy in Monster World</b></td> </tr>
+    <tr> <th>146</th> <td><b>World of Illusion Starring Mickey Mouse & Donald Duck (Disney)</b></td> </tr>
+    <tr> <th>147</th> <td><b>Worms</b></td> </tr>
+    <tr> <th>148</th> <td><b>WWF WrestleMania: The Arcade Game</b></td> </tr>
+    <tr> <th>149</th> <td><b>X-Men</b></td> </tr>
+    <tr> <th>150</th> <td><b>X-Men 2: Clone Wars</b></td> </tr>
+    <tr> <th>151</th> <td><b>Xenon 2: Megablast</b></td> </tr>
+    <tr> <th>152</th> <td><b>Zero the Kamikaze Squirrel</b></td> </tr>
+    <tr> <th>153</th> <td><b>Zero Tolerance</b></td> </tr>
+    <tr> <th>154</th> <td><b>Zero Wing</b></td> </tr>
+    <tr> <th>155</th> <td><b>Zool: Ninja of the "Nth" Dimension</b></td> </tr>
+    <tr> <th>156</th> <td><b>Zoom</b></td> </tr>
+    <tr> <th>157</th> <td><b>Zoop</b></td> </tr>
+            </table>
+            <br>
+    </section>
+
 </main>
 <footer>
     <p> 2024&mdash;2025 &copy; <a href="https://game.5ht.co">Bit Edits: Ретронсолі</a>. All rights reserved.</p>
